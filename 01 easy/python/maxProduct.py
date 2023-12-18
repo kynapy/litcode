@@ -1,5 +1,5 @@
 class Solution:
-    def maxProduct(self, nums: List[int]) -> int:
+    def maxProduct(self, nums) -> int:
         first = nums[0]
         second = nums[1]
         if first > second:
