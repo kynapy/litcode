@@ -14,5 +14,5 @@ class Solution:
             return True
 
 print(Solution().isPowerOfThree(27))
-print(Solution().isPowerOfThree(0))
+print(Solution().isPowerOfThree(6))
 print(Solution().isPowerOfThree(-1))
