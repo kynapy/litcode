@@ -1,5 +1,7 @@
-# 235 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/
+# 235. Lowest Common Ancestor of a Binary Search Tree
+# https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/
 # Attempts: 1
+
 
 class TreeNode:
     def __init__(self, x, left=None, right=None) -> None:
@@ -7,7 +9,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
-def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+
+def lowestCommonAncestor(root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
     if root.val == p.val or root.val == q.val:
         return root
     if root.val > p.val and root.val < q.val:
@@ -18,4 +21,3 @@ def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> Tree
         return lowestCommonAncestor(root.left, p, q)
     else:
         return lowestCommonAncestor(root.right, p, q)
-
